@@ -1,0 +1,19 @@
+crontab -e
+
+-----------
+
+Select editor (1-3). Then edit file to introduce task to be run in this format:
+* * * * * your_task.sh
+
+Each star has time setting.
+First  - minute (0-59)
+Second - hour (0-23) * means every hour
+Third  - day of the month, 1-31: * means every day of the month
+Fourth - month, 1-12: * means every month
+Fifth  - day of the week, 0-7 (0 and 7 are both Sunday): * means every day
+
+Save and close file. Task is install.
+
+To check your tasks write command:
+
+crontab -l

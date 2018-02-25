@@ -1,0 +1,3 @@
+cat /etc/debian_version
+cat /etc/issue
+cat /etc/os-release

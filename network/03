@@ -1,1 +1,1 @@
-ifconfig en2 | grep "ether " | cut -c 8-24
+ifconfig en1 | grep "ether " | cut -c 8-24

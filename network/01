@@ -1,1 +1,1 @@
-ifconfig -a | expand | cut -c 1-8 | uniq -u | sed 's/:.*//'
+ifconfig -l
