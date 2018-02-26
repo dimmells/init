@@ -1,0 +1,2 @@
+In previous command the second IP it's, IP of device which make the link between me (local network) and the outside world.
+Then when you execute command whois <IP> you can find info about this IP.

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -f ./old ];
+then
+	if ! diff ./old /etc/crontab >/dev/null ;
+	then
+		echo "File has been changed" | mail -s "ALLERT!" root
+	fi
+else
+	echo "* 0 * * * ./04" | crontab -
+fi
+cat /etc/crontab > ./old
